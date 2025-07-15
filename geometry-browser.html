@@ -140,7 +140,6 @@
 			rectShape.lineTo( 5, -5 );
 			rectShape.lineTo( 5, 5 );
 			rectShape.lineTo( -5, 5 );
-			rectShape.lineTo( -5, 5 );
 
 			const houseShape = new Shape();
 			houseShape.moveTo( -5, -5 );
@@ -148,7 +147,6 @@
 			houseShape.lineTo( 5, -7.5 );
 			houseShape.lineTo( 7.5, -7.5 );
 			houseShape.lineTo( 7.5, 5 );
-			houseShape.lineTo( -5, 5 );
 			houseShape.lineTo( -5, 5 );
 
 			const holeHouseShape = new Shape();
@@ -196,7 +194,7 @@
 
 					function generateGeometry() {
 
-						const geometry = new RampGeometry( heartShape, data);
+						const geometry = new RampGeometry( rectShape, data);
 						geometry.center();
 
 						updateGroupGeometry( mesh, geometry );
