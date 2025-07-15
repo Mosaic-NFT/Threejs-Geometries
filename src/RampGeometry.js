@@ -83,12 +83,12 @@ class RampGeometry extends BufferGeometry {
 				maxDepth = Math.max( rampDepth, maxDepth );
 
 			}
-
-			positions.push( point.x, point.y, rampDepth );
 			positions.push( nextPoint.x, nextPoint.y, 0 );
 			positions.push( point.x, point.y, rampDepth );
+			positions.push( point.x, point.y, rampDepth );
+			positions.push( nextPoint.x, nextPoint.y, 0 );
 			positions.push( nextPoint.x, nextPoint.y, nextRampDepth );
-			positions.push( nextPoint.x, nextPoint.y, 0 );
+			
 
 		}
 
@@ -103,9 +103,9 @@ class RampGeometry extends BufferGeometry {
 		const scale = depth / ( maxDepth - minDepth );
 		for ( let i = 0; i < points.length - 1; i ++ ) {
 
-			positions[ 18 * i + 5 ] = ( positions[ 18 * i + 5 ] - minDepth ) * scale;
+			positions[ 18 * i + 8 ] = ( positions[ 18 * i + 8 ] - minDepth ) * scale;
 			positions[ 18 * i + 11 ] = ( positions[ 18 * i + 11 ] - minDepth ) * scale;
-			positions[ 18 * i + 14 ] = ( positions[ 18 * i + 14 ] - minDepth ) * scale;
+			positions[ 18 * i + 17 ] = ( positions[ 18 * i + 17 ] - minDepth ) * scale;
 
 		}
 
