@@ -140,6 +140,7 @@
 			rectShape.lineTo( 5, -5 );
 			rectShape.lineTo( 5, 5 );
 			rectShape.lineTo( -5, 5 );
+			rectShape.lineTo( -5, -5 );
 
 			const houseShape = new Shape();
 			houseShape.moveTo( -5, -5 );
@@ -148,18 +149,21 @@
 			houseShape.lineTo( 7.5, -7.5 );
 			houseShape.lineTo( 7.5, 5 );
 			houseShape.lineTo( -5, 5 );
+			houseShape.lineTo( -5, -5 );
 
 			const holeHouseShape = new Shape();
 			holeHouseShape.moveTo( -5, -5 );
 			holeHouseShape.lineTo( 5, -5 );
 			holeHouseShape.lineTo( 5, 5 );
 			holeHouseShape.lineTo( -5, 5 );
+			holeHouseShape.lineTo( -5, -5 );
 
 			const holeHouseHoleShape = new Shape();
 			holeHouseHoleShape.moveTo( -1, - 1 );
 			holeHouseHoleShape.lineTo( 1, - 1 );
 			holeHouseHoleShape.lineTo( 1, 1 );
 			holeHouseHoleShape.lineTo( - 1, 1 );
+			holeHouseHoleShape.lineTo( - 1, - 1 );
 
 			holeHouseShape.holes.push( holeHouseHoleShape );
 
