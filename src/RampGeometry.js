@@ -83,12 +83,12 @@ class RampGeometry extends BufferGeometry {
 				maxDepth = Math.max( rampDepth, maxDepth );
 
 			}
+			
 			positions.push( nextPoint.x, nextPoint.y, 0 );
 			positions.push( point.x, point.y, rampDepth );
 			positions.push( point.x, point.y, rampDepth );
 			positions.push( nextPoint.x, nextPoint.y, 0 );
 			positions.push( nextPoint.x, nextPoint.y, nextRampDepth );
-			
 
 		}
 
