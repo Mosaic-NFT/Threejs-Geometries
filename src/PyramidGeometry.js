@@ -54,7 +54,7 @@ class PyramidGeometry extends BufferGeometry {
 
 			const face = faces[ i ];
 
-			for ( let j = 2; j > - 1; j -- ) {
+			for ( let j = 0; j < 3; j ++ ) {
 
 				const x = points[ face[ j ] ].x;
 				const y = points[ face[ j ] ].y;
@@ -66,8 +66,7 @@ class PyramidGeometry extends BufferGeometry {
 		}
 
 		this.setAttribute( 'position', new BufferAttribute( new Float32Array( positions ), 3 ) );
-		// ToDo - add points correctly so only one face needs to be rendered.
-		//this.computeVertexNormals();
+
 
 	}
 
