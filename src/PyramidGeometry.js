@@ -67,7 +67,7 @@ class PyramidGeometry extends BufferGeometry {
 
 		this.setAttribute( 'position', new BufferAttribute( new Float32Array( positions ), 3 ) );
 		// ToDo - add points correctly so only one face needs to be rendered.
-		this.computeVertexNormals();
+		//this.computeVertexNormals();
 
 	}
 
